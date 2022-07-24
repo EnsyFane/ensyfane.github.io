@@ -8,7 +8,10 @@
         "build-gh": "ng build --configuration production --output-path docs",
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
-        "lint": "ng lint"
+        "lint": "ng lint",
+        "localize-extract": "ng extract-i18n && xliffmerge -p xliffmerge.json",
+        "localize-convert-ro": "npx locl convert -s src/locales/messages.ro.xlf -f json -o src/locales/messages.ro.json",
+        "localize-convert": "npm run localize-convert-ro"
     },
     "private": true,
     "dependencies": {
@@ -41,6 +44,7 @@
         "@types/node": "~18.0.6",
         "@typescript-eslint/eslint-plugin": "^5.30.7",
         "@typescript-eslint/parser": "^5.30.7",
+        "cpy-cli": "4.1.0",
         "eslint": "^8.20.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-import": "^2.26.0",
@@ -50,6 +54,7 @@
         "karma-coverage": "~2.2.0",
         "karma-jasmine": "~5.0.0",
         "karma-jasmine-html-reporter": "~1.7.0",
+        "ngx-i18nsupport": "^0.17.1",
         "prettier": "^2.7.1",
         "typescript": "~4.7.2"
     }

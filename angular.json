@@ -89,7 +89,7 @@
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
                         "browserTarget": "personal-page:build",
-                        "outFile": "i18n.en-US.xlf",
+                        "outFile": "messages.en-US.xlf",
                         "outputPath": "src/locales"
                     }
                 },

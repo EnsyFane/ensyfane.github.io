@@ -2,7 +2,7 @@
     "xliffmergeOptions": {
         "srcDir": "src/locales",
         "genDir": "src/locales",
-        "i18nFile": "i18n.en-US.xlf",
+        "i18nFile": "messages.en-US.xlf",
         "defaultLanguage": "en-US",
         "languages": [
             "ro"
